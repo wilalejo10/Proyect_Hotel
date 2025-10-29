@@ -55,8 +55,11 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
         botonmodificarreserva_consultareseva = new javax.swing.JButton();
         botoneliminarreserva_consultareseva = new javax.swing.JButton();
         botonvolver_consultareseva = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tablaconsultareserva.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,48 +74,50 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultareserva);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 17, -1, 275));
+
+        botonconsultareserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
+        botonconsultareserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultareserva_consultareseva.setText("Consultar");
+        getContentPane().add(botonconsultareserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 198, -1, -1));
 
+        botonmodificarreserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
+        botonmodificarreserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificarreserva_consultareseva.setText("Modificar");
+        getContentPane().add(botonmodificarreserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 252, -1, -1));
 
+        botoneliminarreserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
+        botoneliminarreserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
         botoneliminarreserva_consultareseva.setText("Eliminar");
+        getContentPane().add(botoneliminarreserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 198, -1, -1));
 
+        botonvolver_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_consultareseva.setText("Volver");
+        getContentPane().add(botonvolver_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 252, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonconsultareserva_consultareseva)
-                    .addComponent(botonmodificarreserva_consultareseva))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonvolver_consultareseva)
-                    .addComponent(botoneliminarreserva_consultareseva))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 452, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/reservas.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(jLabel1)
+                .addContainerGap(557, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultareserva_consultareseva)
-                    .addComponent(botoneliminarreserva_consultareseva))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonmodificarreserva_consultareseva)
-                    .addComponent(botonvolver_consultareseva))
-                .addGap(44, 44, 44))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addComponent(jLabel1)
+                .addContainerGap(148, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -157,6 +162,8 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
     private javax.swing.JButton botoneliminarreserva_consultareseva;
     private javax.swing.JButton botonmodificarreserva_consultareseva;
     private javax.swing.JButton botonvolver_consultareseva;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultareserva;
     // End of variables declaration//GEN-END:variables

@@ -68,78 +68,56 @@ public class VistaRegistroAgencia extends javax.swing.JFrame {
         txtnombreagencia = new javax.swing.JTextField();
         txttelefonoagencia = new javax.swing.JTextField();
         txtdireccionagencia = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblidagencia.setText("ID Agencia");
+        getContentPane().add(lblidagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 33, 83, -1));
 
         lblnombreagencia.setText("Nombre");
+        getContentPane().add(lblnombreagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 85, 83, -1));
 
         lbltelefonoagencia.setText("Teléfono");
+        getContentPane().add(lbltelefonoagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 133, 83, -1));
 
         lbldireccionagencia.setText("Dirección");
+        getContentPane().add(lbldireccionagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 176, 83, -1));
 
+        botonguardaragencia.setBackground(new java.awt.Color(0, 0, 0));
+        botonguardaragencia.setForeground(new java.awt.Color(255, 255, 255));
         botonguardaragencia.setText("Guardar");
+        getContentPane().add(botonguardaragencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 238, -1, -1));
 
+        botonlimpiaragencia.setBackground(new java.awt.Color(0, 0, 0));
+        botonlimpiaragencia.setForeground(new java.awt.Color(255, 255, 255));
         botonlimpiaragencia.setText("Limpiar");
+        getContentPane().add(botonlimpiaragencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 238, -1, -1));
 
+        botonvolver_registroagencia.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_registroagencia.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_registroagencia.setText("Volver");
+        getContentPane().add(botonvolver_registroagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(278, 238, -1, -1));
+        getContentPane().add(txtidagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 30, 129, -1));
+        getContentPane().add(txtnombreagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 82, 129, -1));
+        getContentPane().add(txttelefonoagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 130, 129, -1));
+        getContentPane().add(txtdireccionagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(156, 176, 129, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblidagencia, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                            .addComponent(lblnombreagencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbltelefonoagencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lbldireccionagencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(38, 38, 38)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtidagencia, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
-                                .addComponent(txtnombreagencia)
-                                .addComponent(txtdireccionagencia))
-                            .addComponent(txttelefonoagencia, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(botonguardaragencia)
-                        .addGap(48, 48, 48)
-                        .addComponent(botonlimpiaragencia)
-                        .addGap(30, 30, 30)
-                        .addComponent(botonvolver_registroagencia)))
-                .addContainerGap(50, Short.MAX_VALUE))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblidagencia)
-                    .addComponent(txtidagencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnombreagencia)
-                    .addComponent(txtnombreagencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbltelefonoagencia)
-                    .addComponent(txttelefonoagencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbldireccionagencia)
-                    .addComponent(txtdireccionagencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonguardaragencia)
-                    .addComponent(botonlimpiaragencia)
-                    .addComponent(botonvolver_registroagencia))
-                .addGap(39, 39, 39))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -183,6 +161,7 @@ public class VistaRegistroAgencia extends javax.swing.JFrame {
     private javax.swing.JButton botonguardaragencia;
     private javax.swing.JButton botonlimpiaragencia;
     private javax.swing.JButton botonvolver_registroagencia;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbldireccionagencia;
     private javax.swing.JLabel lblidagencia;
     private javax.swing.JLabel lblnombreagencia;

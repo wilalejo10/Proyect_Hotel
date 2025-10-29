@@ -76,92 +76,60 @@ public class VistaRegistroHuesped extends javax.swing.JFrame {
         txtnombrehuesped_resgistrohuesped = new javax.swing.JTextField();
         txttelefonohuesped_registrohuesped = new javax.swing.JTextField();
         txtfechantohuesped_registrohuesped = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblhuesped.setText("ID Huésped");
+        getContentPane().add(lblhuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 57, 91, -1));
 
         lblnombrehuesped.setText("Nombre completo");
+        getContentPane().add(lblnombrehuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 99, 116, -1));
 
         lbldireccionhuesped.setText("Dirección");
+        getContentPane().add(lbldireccionhuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 144, 76, -1));
 
         lbltelefonohuesped.setText("Teléfono");
+        getContentPane().add(lbltelefonohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 189, 76, -1));
 
         lblfechanto.setText("Fecha de nacimiento");
+        getContentPane().add(lblfechanto, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 235, 135, -1));
 
+        botonguardarhuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonguardarhuesped.setForeground(new java.awt.Color(255, 255, 255));
         botonguardarhuesped.setText("Guardar");
+        getContentPane().add(botonguardarhuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 269, -1, -1));
 
+        botonlimpiarhuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonlimpiarhuesped.setForeground(new java.awt.Color(255, 255, 255));
         botonlimpiarhuesped.setText("Limpiar");
+        getContentPane().add(botonlimpiarhuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 269, -1, -1));
 
+        botonvolver_resgistrohuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_resgistrohuesped.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_resgistrohuesped.setText("Volver");
+        getContentPane().add(botonvolver_resgistrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 269, -1, -1));
+        getContentPane().add(txtidhuesped_registrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 54, 136, -1));
+        getContentPane().add(txtdireccionhuesped_registrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 141, 136, -1));
+        getContentPane().add(txtnombrehuesped_resgistrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 96, 136, -1));
+        getContentPane().add(txttelefonohuesped_registrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 186, 136, -1));
+        getContentPane().add(txtfechantohuesped_registrohuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 229, 136, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(lblhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(50, 50, 50)
-                                .addComponent(botonguardarhuesped)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addComponent(botonlimpiarhuesped)
-                                .addGap(34, 34, 34)
-                                .addComponent(botonvolver_resgistrohuesped))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtdireccionhuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtidhuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtnombrehuesped_resgistrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txttelefonohuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtfechantohuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnombrehuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbltelefonohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbldireccionhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblfechanto, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(49, Short.MAX_VALUE))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblhuesped)
-                    .addComponent(txtidhuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnombrehuesped)
-                    .addComponent(txtnombrehuesped_resgistrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbldireccionhuesped)
-                    .addComponent(txtdireccionhuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbltelefonohuesped)
-                    .addComponent(txttelefonohuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblfechanto)
-                    .addComponent(txtfechantohuesped_registrohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonguardarhuesped)
-                    .addComponent(botonlimpiarhuesped)
-                    .addComponent(botonvolver_resgistrohuesped))
-                .addContainerGap(31, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 350, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 450, 350));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -205,6 +173,7 @@ public class VistaRegistroHuesped extends javax.swing.JFrame {
     private javax.swing.JButton botonguardarhuesped;
     private javax.swing.JButton botonlimpiarhuesped;
     private javax.swing.JButton botonvolver_resgistrohuesped;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbldireccionhuesped;
     private javax.swing.JLabel lblfechanto;
     private javax.swing.JLabel lblhuesped;

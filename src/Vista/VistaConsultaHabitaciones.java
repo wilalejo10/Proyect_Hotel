@@ -55,8 +55,11 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
         botonaliminarhabitacion_consultahabitacion = new javax.swing.JButton();
         botonmodificarhabitacion_consultahabitacion = new javax.swing.JButton();
         bontonvolver_consultahabitacion = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tablaconsultahabitacion.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -71,48 +74,50 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultahabitacion);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 40, 375, 275));
+
+        botonconsultarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonconsultarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultarhabitacion_consultahabitacion.setText("Consultar");
+        getContentPane().add(botonconsultarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 232, -1, -1));
 
+        botonaliminarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonaliminarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonaliminarhabitacion_consultahabitacion.setText("Eliminar");
+        getContentPane().add(botonaliminarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 232, -1, -1));
 
+        botonmodificarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonmodificarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificarhabitacion_consultahabitacion.setText("Modificar");
+        getContentPane().add(botonmodificarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 284, -1, -1));
 
+        bontonvolver_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        bontonvolver_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         bontonvolver_consultahabitacion.setText("Volver");
+        getContentPane().add(bontonvolver_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 284, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(botonconsultarhabitacion_consultahabitacion)
-                    .addComponent(botonmodificarhabitacion_consultahabitacion))
-                .addGap(73, 73, 73)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonaliminarhabitacion_consultahabitacion)
-                    .addComponent(bontonvolver_consultahabitacion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/habitacion.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel2)
+                .addContainerGap(480, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(48, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultarhabitacion_consultahabitacion)
-                    .addComponent(botonaliminarhabitacion_consultahabitacion))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonmodificarhabitacion_consultahabitacion)
-                    .addComponent(bontonvolver_consultahabitacion))
-                .addGap(56, 56, 56))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(151, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 710, 350));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -157,6 +162,8 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
     private javax.swing.JButton botonaliminarhabitacion_consultahabitacion;
     private javax.swing.JButton botonconsultarhabitacion_consultahabitacion;
     private javax.swing.JButton botonmodificarhabitacion_consultahabitacion;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultahabitacion;
     // End of variables declaration//GEN-END:variables

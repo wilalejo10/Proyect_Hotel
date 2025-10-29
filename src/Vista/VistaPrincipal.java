@@ -44,10 +44,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
         bontonregitrar = new javax.swing.JButton();
         botonsalida = new javax.swing.JButton();
         lbltitulo = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        bontonconsultar.setBackground(new java.awt.Color(0, 0, 0));
         bontonconsultar.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        bontonconsultar.setForeground(new java.awt.Color(255, 255, 255));
         bontonconsultar.setText("Consultar");
         bontonconsultar.setBorderPainted(false);
         bontonconsultar.addActionListener(new java.awt.event.ActionListener() {
@@ -55,53 +59,43 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 bontonconsultarActionPerformed(evt);
             }
         });
+        getContentPane().add(bontonconsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 103, 131, 54));
 
+        bontonregitrar.setBackground(new java.awt.Color(0, 0, 0));
         bontonregitrar.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        bontonregitrar.setForeground(new java.awt.Color(255, 255, 255));
         bontonregitrar.setText("Registrar");
         bontonregitrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bontonregitrarActionPerformed(evt);
             }
         });
+        getContentPane().add(bontonregitrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 103, 131, 54));
 
+        botonsalida.setBackground(new java.awt.Color(0, 0, 0));
         botonsalida.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
+        botonsalida.setForeground(new java.awt.Color(255, 255, 255));
         botonsalida.setText("Salir");
+        getContentPane().add(botonsalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 254, 124, 42));
 
         lbltitulo.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
         lbltitulo.setText("Sistema de Gestión Hotelera - Tranquidescanso");
+        getContentPane().add(lbltitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 16, 500, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(botonsalida, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(98, 98, 98)
-                        .addComponent(bontonconsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(48, 48, 48)
-                        .addComponent(bontonregitrar, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(lbltitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 530, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(lbltitulo)
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bontonconsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bontonregitrar, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
-                .addComponent(botonsalida, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -153,6 +147,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton bontonconsultar;
     private javax.swing.JButton bontonregitrar;
     private javax.swing.JButton botonsalida;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lbltitulo;
     // End of variables declaration//GEN-END:variables
 }

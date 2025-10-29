@@ -1,6 +1,9 @@
 
 package Vista;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import java.awt.Image;
 import javax.swing.JButton;
 
 /**
@@ -39,8 +42,10 @@ public class VistaConsulta extends javax.swing.JFrame {
 
     public VistaConsulta() {
         initComponents();
+        
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -53,68 +58,36 @@ public class VistaConsulta extends javax.swing.JFrame {
         botonconsultahoteles = new javax.swing.JButton();
         botonconsultareservas = new javax.swing.JButton();
         botonconsultaagencias = new javax.swing.JButton();
-        botonregresomenu_consulta = new javax.swing.JButton();
         botonconsultahabitaciones = new javax.swing.JButton();
+        botonregresomenu_consulta = new javax.swing.JButton();
         botonconsultahuespedes = new javax.swing.JButton();
+        JlavelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         botonconsultahoteles.setText("Consultar Hoteles");
+        getContentPane().add(botonconsultahoteles, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 180, -1, -1));
 
         botonconsultareservas.setText("Consultar Reservas");
+        getContentPane().add(botonconsultareservas, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, -1, -1));
 
         botonconsultaagencias.setText("Consultar Agencias");
-
-        botonregresomenu_consulta.setText("Volver al Menú Principal");
+        getContentPane().add(botonconsultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, -1, -1));
 
         botonconsultahabitaciones.setText("Consultar Habitaciones");
+        getContentPane().add(botonconsultahabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
+
+        botonregresomenu_consulta.setText("Volver al Menú Principal");
+        getContentPane().add(botonregresomenu_consulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
 
         botonconsultahuespedes.setText("Consultar Huéspedes");
+        getContentPane().add(botonconsultahuespedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(botonconsultareservas)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(botonconsultahuespedes)
-                        .addGap(101, 101, 101))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(botonconsultahoteles)
-                                .addGap(18, 18, 18)
-                                .addComponent(botonconsultahabitaciones))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(80, 80, 80)
-                                .addComponent(botonconsultaagencias)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(botonregresomenu_consulta)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultahoteles)
-                    .addComponent(botonconsultahabitaciones))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultareservas)
-                    .addComponent(botonconsultahuespedes))
-                .addGap(42, 42, 42)
-                .addComponent(botonconsultaagencias)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                .addComponent(botonregresomenu_consulta)
-                .addGap(33, 33, 33))
-        );
+        JlavelFondo.setBackground(new java.awt.Color(204, 0, 0));
+        JlavelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/hotel.png"))); // NOI18N
+        JlavelFondo.setOpaque(true);
+        getContentPane().add(JlavelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 490));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -155,6 +128,7 @@ public class VistaConsulta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel JlavelFondo;
     private javax.swing.JButton botonconsultaagencias;
     private javax.swing.JButton botonconsultahabitaciones;
     private javax.swing.JButton botonconsultahoteles;

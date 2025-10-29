@@ -52,69 +52,77 @@ public class VistaRegistrar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        botonregistrarhotel = new javax.swing.JButton();
         botonregistrarreservacion = new javax.swing.JButton();
+        botonregresomenu_resgistro = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        botonregistrarhotel = new javax.swing.JButton();
         botonregistrarhabitacion = new javax.swing.JButton();
         botonregistrarhuesped = new javax.swing.JButton();
         botonregistraragencia = new javax.swing.JButton();
-        botonregresomenu_resgistro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        botonregistrarreservacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonregistrarreservacion.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistrarreservacion.setText("Registrar Resevación");
+        getContentPane().add(botonregistrarreservacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 133, -1, -1));
+
+        botonregresomenu_resgistro.setBackground(new java.awt.Color(0, 0, 0));
+        botonregresomenu_resgistro.setForeground(new java.awt.Color(255, 255, 255));
+        botonregresomenu_resgistro.setText("Volver al Menú Principal");
+        getContentPane().add(botonregresomenu_resgistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 271, -1, -1));
+
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        botonregistrarhotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonregistrarhotel.setForeground(new java.awt.Color(255, 255, 255));
         botonregistrarhotel.setText("Registrar Hotel");
 
-        botonregistrarreservacion.setText("Registrar Resevación");
-
+        botonregistrarhabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonregistrarhabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonregistrarhabitacion.setText("Registrar Habitación");
 
+        botonregistrarhuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonregistrarhuesped.setForeground(new java.awt.Color(255, 255, 255));
         botonregistrarhuesped.setText("Registrar Huésped");
 
+        botonregistraragencia.setBackground(new java.awt.Color(0, 0, 0));
+        botonregistraragencia.setForeground(new java.awt.Color(255, 255, 255));
         botonregistraragencia.setText("Registrar Agencia de Viajes");
 
-        botonregresomenu_resgistro.setText("Volver al Menú Principal");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
                 .addComponent(botonregistrarhotel)
-                .addGap(29, 29, 29)
-                .addComponent(botonregistrarhabitacion)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(botonregresomenu_resgistro)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 44, Short.MAX_VALUE)
-                .addComponent(botonregistrarreservacion)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(botonregistrarhuesped)
-                .addGap(84, 84, 84))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 194, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonregistrarhuesped)
+                    .addComponent(botonregistrarhabitacion))
+                .addGap(50, 50, 50))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(173, 173, 173)
                 .addComponent(botonregistraragencia)
-                .addGap(93, 93, 93))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonregistrarhotel)
                     .addComponent(botonregistrarhabitacion))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonregistrarreservacion)
-                    .addComponent(botonregistrarhuesped))
-                .addGap(34, 34, 34)
+                .addGap(48, 48, 48)
+                .addComponent(botonregistrarhuesped)
+                .addGap(39, 39, 39)
                 .addComponent(botonregistraragencia)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addComponent(botonregresomenu_resgistro)
-                .addContainerGap())
+                .addContainerGap(137, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -161,5 +169,6 @@ public class VistaRegistrar extends javax.swing.JFrame {
     private javax.swing.JButton botonregistrarhuesped;
     private javax.swing.JButton botonregistrarreservacion;
     private javax.swing.JButton botonregresomenu_resgistro;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

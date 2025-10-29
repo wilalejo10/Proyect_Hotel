@@ -28,12 +28,15 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaconsultahuesped = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        botonvolver_consultahusped = new javax.swing.JButton();
+        botonmodificarhuesped_consultahuesped = new javax.swing.JButton();
         botonconsultarhuesped_consultahuesped = new javax.swing.JButton();
         botoneliminarhuesped_consultahuesped = new javax.swing.JButton();
-        botonmodificarhuesped_consultahuesped = new javax.swing.JButton();
-        botonvolver_consultahusped = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tablaconsultahuesped.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -48,48 +51,67 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultahuesped);
 
-        botonconsultarhuesped_consultahuesped.setText("Consultar");
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(299, 17, 375, 275));
 
-        botoneliminarhuesped_consultahuesped.setText("Eliminar");
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
-        botonmodificarhuesped_consultahuesped.setText("Modificar");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/huespedes.png"))); // NOI18N
 
+        botonvolver_consultahusped.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_consultahusped.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_consultahusped.setText("Volver");
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        botonmodificarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonmodificarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
+        botonmodificarhuesped_consultahuesped.setText("Modificar");
+
+        botonconsultarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botonconsultarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
+        botonconsultarhuesped_consultahuesped.setText("Consultar");
+
+        botoneliminarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
+        botoneliminarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
+        botoneliminarhuesped_consultahuesped.setText("Eliminar");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(botonconsultarhuesped_consultahuesped)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(botoneliminarhuesped_consultahuesped))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(botonmodificarhuesped_consultahuesped)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(botonvolver_consultahusped)))))
+                .addContainerGap(473, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonconsultarhuesped_consultahuesped)
-                    .addComponent(botonmodificarhuesped_consultahuesped))
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botoneliminarhuesped_consultahuesped))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonvolver_consultahusped)
-                    .addComponent(botoneliminarhuesped_consultahuesped))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                    .addComponent(botonmodificarhuesped_consultahuesped))
+                .addGap(58, 58, 58))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultarhuesped_consultahuesped)
-                    .addComponent(botoneliminarhuesped_consultahuesped))
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonmodificarhuesped_consultahuesped)
-                    .addComponent(botonvolver_consultahusped))
-                .addGap(46, 46, 46))
-        );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,6 +156,8 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
     private javax.swing.JButton botoneliminarhuesped_consultahuesped;
     private javax.swing.JButton botonmodificarhuesped_consultahuesped;
     private javax.swing.JButton botonvolver_consultahusped;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultahuesped;
     // End of variables declaration//GEN-END:variables

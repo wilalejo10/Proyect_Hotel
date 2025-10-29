@@ -58,8 +58,11 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
         botoneliminarhotel_consultahotel = new javax.swing.JButton();
         botonmodificarhotel_consultahotel = new javax.swing.JButton();
         bontonvolver_consultahotel = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tablaconsultarhoteles.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -74,48 +77,50 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultarhoteles);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 51, 461, 315));
+
+        botonconsultarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonconsultarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultarhotel_consultahotel.setText("Consultar");
+        getContentPane().add(botonconsultarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 265, -1, -1));
 
+        botoneliminarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
+        botoneliminarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botoneliminarhotel_consultahotel.setText("Eliminar");
+        getContentPane().add(botoneliminarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 265, -1, -1));
 
+        botonmodificarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonmodificarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificarhotel_consultahotel.setText("Modificar");
+        getContentPane().add(botonmodificarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 316, -1, -1));
 
+        bontonvolver_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
+        bontonvolver_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         bontonvolver_consultahotel.setText("Volver");
+        getContentPane().add(bontonvolver_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 316, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(botonconsultarhotel_consultahotel)
-                    .addComponent(botonmodificarhotel_consultahotel))
-                .addGap(68, 68, 68)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(bontonvolver_consultahotel)
-                    .addComponent(botoneliminarhotel_consultahotel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/hoteles.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(580, Short.MAX_VALUE))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonconsultarhotel_consultahotel)
-                    .addComponent(botoneliminarhotel_consultahotel))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonmodificarhotel_consultahotel)
-                    .addComponent(bontonvolver_consultahotel))
-                .addGap(50, 50, 50))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(154, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 380));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -160,6 +165,8 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
     private javax.swing.JButton botonconsultarhotel_consultahotel;
     private javax.swing.JButton botoneliminarhotel_consultahotel;
     private javax.swing.JButton botonmodificarhotel_consultahotel;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultarhoteles;
     // End of variables declaration//GEN-END:variables

@@ -75,96 +75,62 @@ public class VistaRegistroHotel extends javax.swing.JFrame {
         txttelefonohotel = new javax.swing.JTextField();
         txtanioinauguracion = new javax.swing.JTextField();
         comboboxcategoria = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblnombrehotel.setText("Nombre del hotel");
+        getContentPane().add(lblnombrehotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 15, 115, -1));
+        getContentPane().add(txtnombrehotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 12, 175, -1));
 
         lbldireccionhotel.setText("Dirección");
+        getContentPane().add(lbldireccionhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 63, 92, -1));
 
         lbltelefonohotel.setText("Teléfono");
+        getContentPane().add(lbltelefonohotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 92, -1));
 
         lblanioinauguracion.setText("Año de inauguración");
+        getContentPane().add(lblanioinauguracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 152, 115, -1));
 
         lblcategoria.setText("Categoría");
+        getContentPane().add(lblcategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 192, 92, -1));
 
+        botonguardarhotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonguardarhotel.setForeground(new java.awt.Color(255, 255, 255));
         botonguardarhotel.setText("Guardar");
+        getContentPane().add(botonguardarhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 237, -1, -1));
 
+        botonlimpiarhotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonlimpiarhotel.setForeground(new java.awt.Color(255, 255, 255));
         botonlimpiarhotel.setText("Limpiar");
+        getContentPane().add(botonlimpiarhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 237, -1, -1));
 
+        botonvolver_registrohotel.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_registrohotel.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_registrohotel.setText("Volver");
+        getContentPane().add(botonvolver_registrohotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 237, -1, -1));
+        getContentPane().add(txtdireccionhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 60, 175, -1));
+        getContentPane().add(txttelefonohotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 107, 175, -1));
+        getContentPane().add(txtanioinauguracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 149, 175, -1));
 
         comboboxcategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 Estrella", "2 Estrellas", "3 Estrellas", "4 Estrellas", "5 Estrellas" }));
+        getContentPane().add(comboboxcategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(173, 189, 114, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lbltelefonohotel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lbldireccionhotel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblcategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblanioinauguracion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblnombrehotel, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtnombrehotel, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
-                            .addComponent(txtdireccionhotel)
-                            .addComponent(txttelefonohotel)
-                            .addComponent(txtanioinauguracion)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addComponent(comboboxcategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(102, 102, 102))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(botonguardarhotel)
-                        .addGap(39, 39, 39)
-                        .addComponent(botonlimpiarhotel)
-                        .addGap(42, 42, 42)
-                        .addComponent(botonvolver_registrohotel)
-                        .addGap(49, 49, 49))))
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblnombrehotel)
-                    .addComponent(txtnombrehotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbldireccionhotel)
-                    .addComponent(txtdireccionhotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbltelefonohotel)
-                    .addComponent(txttelefonohotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblanioinauguracion)
-                    .addComponent(txtanioinauguracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblcategoria)
-                    .addComponent(comboboxcategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonguardarhotel)
-                    .addComponent(botonlimpiarhotel)
-                    .addComponent(botonvolver_registrohotel))
-                .addGap(40, 40, 40))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 430, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -209,6 +175,7 @@ public class VistaRegistroHotel extends javax.swing.JFrame {
     private javax.swing.JButton botonlimpiarhotel;
     private javax.swing.JButton botonvolver_registrohotel;
     private javax.swing.JComboBox<String> comboboxcategoria;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblanioinauguracion;
     private javax.swing.JLabel lblcategoria;
     private javax.swing.JLabel lbldireccionhotel;

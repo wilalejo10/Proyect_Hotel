@@ -69,81 +69,57 @@ public class VistaRegistroHabitacion extends javax.swing.JFrame {
         txtidhabitacion = new javax.swing.JTextField();
         txttipohabitacion = new javax.swing.JTextField();
         comboboxidhotel = new javax.swing.JComboBox<>();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblidhabitacion.setText("ID habitación");
+        getContentPane().add(lblidhabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 60, 106, -1));
 
         lbltipohabitacion.setText("Tipo");
+        getContentPane().add(lbltipohabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 88, 62, -1));
 
         lblnumerohabitacion.setText("Número de habitación");
+        getContentPane().add(lblnumerohabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 119, 134, -1));
 
         lblidhotel.setText("ID hotel");
+        getContentPane().add(lblidhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 159, 59, -1));
 
+        botonguardarhabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonguardarhabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonguardarhabitacion.setText("Guardar");
+        getContentPane().add(botonguardarhabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 215, -1, -1));
 
+        botonlimpiarhabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonlimpiarhabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonlimpiarhabitacion.setText("Limpiar");
+        getContentPane().add(botonlimpiarhabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 215, -1, -1));
 
+        botonvolver_registrohabitacion.setBackground(new java.awt.Color(0, 0, 0));
+        botonvolver_registrohabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonvolver_registrohabitacion.setText("Volver");
+        getContentPane().add(botonvolver_registrohabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(304, 215, -1, -1));
+        getContentPane().add(txtnumerohabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 119, 130, -1));
+        getContentPane().add(txtidhabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 57, 130, -1));
+        getContentPane().add(txttipohabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 85, 130, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(50, 50, 50)
-                                .addComponent(botonguardarhabitacion))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(42, 42, 42)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblidhabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lbltipohabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblidhotel, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(28, 28, 28))
-                    .addComponent(lblnumerohabitacion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(botonlimpiarhabitacion)
-                        .addGap(38, 38, 38)
-                        .addComponent(botonvolver_registrohabitacion))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(comboboxidhotel, javax.swing.GroupLayout.Alignment.LEADING, 0, 130, Short.MAX_VALUE)
-                        .addComponent(txtnumerohabitacion, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(txttipohabitacion, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(txtidhabitacion, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(24, Short.MAX_VALUE))
+        getContentPane().add(comboboxidhotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 159, 130, -1));
+
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(57, 57, 57)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblidhabitacion)
-                    .addComponent(txtidhabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txttipohabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbltipohabitacion))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtnumerohabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblnumerohabitacion))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblidhotel)
-                    .addComponent(comboboxidhotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(botonguardarhabitacion)
-                    .addComponent(botonlimpiarhabitacion)
-                    .addComponent(botonvolver_registrohabitacion))
-                .addContainerGap(62, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -188,6 +164,7 @@ public class VistaRegistroHabitacion extends javax.swing.JFrame {
     private javax.swing.JButton botonlimpiarhabitacion;
     private javax.swing.JButton botonvolver_registrohabitacion;
     private javax.swing.JComboBox<String> comboboxidhotel;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblidhabitacion;
     private javax.swing.JLabel lblidhotel;
     private javax.swing.JLabel lblnumerohabitacion;
