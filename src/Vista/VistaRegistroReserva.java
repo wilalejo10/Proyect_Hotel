@@ -38,7 +38,7 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
     }
 
     public JTextField getTxtagencia_registroreserva() {
-        return txtagencia_registroreserva;
+        return txtidagencia_registroreserva;
     }
 
     public JTextField getTxtcantidadhabitaciones() {
@@ -66,7 +66,7 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
     }
 
     public JTextField getTxtnombrehuesped_resgistroreserva() {
-        return txtnombrehuesped_resgistroreserva;
+        return txtidhuesped_resgistroreserva;
     }
 
     public JTextField getTxtserviciosadicionales() {
@@ -99,11 +99,11 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
         botonlimpiarreserva = new javax.swing.JButton();
         botonvolver_resgistroreserva = new javax.swing.JButton();
         txtidreserva = new javax.swing.JTextField();
-        txtnombrehuesped_resgistroreserva = new javax.swing.JTextField();
+        txtidhuesped_resgistroreserva = new javax.swing.JTextField();
         txtfechafin_registroreserva = new javax.swing.JTextField();
         txtdireccion_registroreserva = new javax.swing.JTextField();
         txttelefono_registroreserva = new javax.swing.JTextField();
-        txtagencia_registroreserva = new javax.swing.JTextField();
+        txtidagencia_registroreserva = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         txtfechainicio_registroreserva = new javax.swing.JTextField();
         txtcatidadpersona = new javax.swing.JTextField();
@@ -118,7 +118,7 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
         lblidreserva.setText("ID Reserva");
         getContentPane().add(lblidreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 57, 86, -1));
 
-        lblnombrehuesped.setText("Nombre del huésped");
+        lblnombrehuesped.setText("ID del huésped");
         getContentPane().add(lblnombrehuesped, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 100, 140, -1));
 
         jLabel3.setText("Dirección");
@@ -127,7 +127,7 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
         jLabel4.setText("Teléfono");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 180, 140, -1));
 
-        jLabel5.setText("Agencia");
+        jLabel5.setText("ID Agencia");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 220, 140, -1));
 
         jLabel6.setText("Fecha Fin");
@@ -157,11 +157,11 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
         botonvolver_resgistroreserva.setText("Volver");
         getContentPane().add(botonvolver_resgistroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 417, -1, -1));
         getContentPane().add(txtidreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 57, 122, -1));
-        getContentPane().add(txtnombrehuesped_resgistroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 97, 122, -1));
+        getContentPane().add(txtidhuesped_resgistroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 97, 122, -1));
         getContentPane().add(txtfechafin_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 257, 101, -1));
         getContentPane().add(txtdireccion_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 137, 122, -1));
         getContentPane().add(txttelefono_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 177, 122, -1));
-        getContentPane().add(txtagencia_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 217, 122, -1));
+        getContentPane().add(txtidagencia_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 217, 122, -1));
 
         jLabel10.setText("Fecha Inicio");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 260, 85, -1));
@@ -242,14 +242,14 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblidreserva;
     private javax.swing.JLabel lblnombrehuesped;
-    private javax.swing.JTextField txtagencia_registroreserva;
     private javax.swing.JTextField txtcantidadhabitaciones;
     private javax.swing.JTextField txtcatidadpersona;
     private javax.swing.JTextField txtdireccion_registroreserva;
     private javax.swing.JTextField txtfechafin_registroreserva;
     private javax.swing.JTextField txtfechainicio_registroreserva;
+    private javax.swing.JTextField txtidagencia_registroreserva;
+    private javax.swing.JTextField txtidhuesped_resgistroreserva;
     private javax.swing.JTextField txtidreserva;
-    private javax.swing.JTextField txtnombrehuesped_resgistroreserva;
     private javax.swing.JTextField txtserviciosadicionales;
     private javax.swing.JTextField txttelefono_registroreserva;
     // End of variables declaration//GEN-END:variables

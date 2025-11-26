@@ -37,7 +37,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombrehuesped">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nombre del hu&#xe9;sped"/>
+        <Property name="text" type="java.lang.String" value="ID del hu&#xe9;sped"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -67,7 +67,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Agencia"/>
+        <Property name="text" type="java.lang.String" value="ID Agencia"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -170,7 +170,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtnombrehuesped_resgistroreserva">
+    <Component class="javax.swing.JTextField" name="txtidhuesped_resgistroreserva">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="178" y="97" width="122" height="-1"/>
@@ -198,7 +198,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtagencia_registroreserva">
+    <Component class="javax.swing.JTextField" name="txtidagencia_registroreserva">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="178" y="217" width="122" height="-1"/>
