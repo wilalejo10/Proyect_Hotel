@@ -12,9 +12,9 @@ import java.sql.SQLException;
  * @author USER
  */
 public class ConnectionBD {
-    private static final String URL = "jdbc:postgresql://localhost:5432/hotel";
-    private static final String USER = "postgres";
-    private static final String PASSWORD = "123456";
+    private static final String URL = "jdbc:mysql://localhost:3306/hotel";
+    private static final String USER = "root";
+    private static final String PASSWORD = "admin";
     
     public static Connection getConnectionDb() throws SQLException {
         System.out.println("Conectado...");
