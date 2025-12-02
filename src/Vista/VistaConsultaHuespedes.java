@@ -4,6 +4,10 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+
 /**
  *
  * @author jnosp
@@ -17,6 +21,46 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBotonconsultarhuesped_consultahuesped() {
+        return botonconsultarhuesped_consultahuesped;
+    }
+
+    public JButton getBotoneliminarhuesped_consultahuesped() {
+        return botoneliminarhuesped_consultahuesped;
+    }
+
+    public JButton getBotonmodificarhuesped_consultahuesped() {
+        return botonmodificarhuesped_consultahuesped;
+    }
+
+    public JButton getBotonvolver_consultahusped() {
+        return botonvolver_consultahusped;
+    }
+
+    public JTable getTablaconsultahuesped() {
+        return tablaconsultahuesped;
+    }
+
+    public JTextField getTxtconsulta_direccionhuesped() {
+        return txtconsulta_direccionhuesped;
+    }
+
+    public JTextField getTxtconsulta_fechadenacimiento() {
+        return txtconsulta_fechadenacimiento;
+    }
+
+    public JTextField getTxtconsulta_idhuesped() {
+        return txtconsulta_idhuesped;
+    }
+
+    public JTextField getTxtconsulta_nombrehuesped() {
+        return txtconsulta_nombrehuesped;
+    }
+
+    public JTextField getTxtconsulta_telefonohuesped() {
+        return txtconsulta_telefonohuesped;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,17 +70,58 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tablaconsultahuesped = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         botonvolver_consultahusped = new javax.swing.JButton();
         botonmodificarhuesped_consultahuesped = new javax.swing.JButton();
         botonconsultarhuesped_consultahuesped = new javax.swing.JButton();
         botoneliminarhuesped_consultahuesped = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        txtconsulta_idhuesped = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtconsulta_nombrehuesped = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaconsultahuesped = new javax.swing.JTable();
+        txtconsulta_direccionhuesped = new javax.swing.JTextField();
+        txtconsulta_telefonohuesped = new javax.swing.JTextField();
+        txtconsulta_fechadenacimiento = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        botonvolver_consultahusped.setText("Volver");
+
+        botonmodificarhuesped_consultahuesped.setText("Modificar");
+
+        botonconsultarhuesped_consultahuesped.setText("Consultar");
+
+        botoneliminarhuesped_consultahuesped.setText("Eliminar");
+
+        jLabel2.setText("ID Huesped");
+
+        txtconsulta_idhuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_idhuespedActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Nombre completo");
+
+        txtconsulta_nombrehuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_nombrehuespedActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setText("Direccion");
+
+        jLabel5.setText("Telefono");
+
+        jLabel6.setText("Fecha de nacimiento");
 
         tablaconsultahuesped.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -51,70 +136,129 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultahuesped);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(299, 17, 375, 275));
+        txtconsulta_direccionhuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_direccionhuespedActionPerformed(evt);
+            }
+        });
 
-        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+        txtconsulta_telefonohuesped.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_telefonohuespedActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/huespedes.png"))); // NOI18N
-
-        botonvolver_consultahusped.setBackground(new java.awt.Color(0, 0, 0));
-        botonvolver_consultahusped.setForeground(new java.awt.Color(255, 255, 255));
-        botonvolver_consultahusped.setText("Volver");
-
-        botonmodificarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
-        botonmodificarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
-        botonmodificarhuesped_consultahuesped.setText("Modificar");
-
-        botonconsultarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
-        botonconsultarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
-        botonconsultarhuesped_consultahuesped.setText("Consultar");
-
-        botoneliminarhuesped_consultahuesped.setBackground(new java.awt.Color(0, 0, 0));
-        botoneliminarhuesped_consultahuesped.setForeground(new java.awt.Color(255, 255, 255));
-        botoneliminarhuesped_consultahuesped.setText("Eliminar");
+        txtconsulta_fechadenacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_fechadenacimientoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtconsulta_nombrehuesped))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtconsulta_telefonohuesped)
+                            .addComponent(txtconsulta_fechadenacimiento)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(45, 45, 45)
+                        .addComponent(txtconsulta_idhuesped))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(botonconsultarhuesped_consultahuesped)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                                    .addComponent(botoneliminarhuesped_consultahuesped))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(botonmodificarhuesped_consultahuesped)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(botonvolver_consultahusped)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(botonconsultarhuesped_consultahuesped)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(botoneliminarhuesped_consultahuesped))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(botonmodificarhuesped_consultahuesped)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(botonvolver_consultahusped)))))
-                .addContainerGap(473, Short.MAX_VALUE))
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtconsulta_direccionhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtconsulta_idhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtconsulta_nombrehuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtconsulta_direccionhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtconsulta_telefonohuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtconsulta_fechadenacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonconsultarhuesped_consultahuesped)
                     .addComponent(botoneliminarhuesped_consultahuesped))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(botonvolver_consultahusped)
                     .addComponent(botonmodificarhuesped_consultahuesped))
                 .addGap(58, 58, 58))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 330));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 720, 330));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtconsulta_idhuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_idhuespedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_idhuespedActionPerformed
+
+    private void txtconsulta_nombrehuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_nombrehuespedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_nombrehuespedActionPerformed
+
+    private void txtconsulta_direccionhuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_direccionhuespedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_direccionhuespedActionPerformed
+
+    private void txtconsulta_telefonohuespedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_telefonohuespedActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_telefonohuespedActionPerformed
+
+    private void txtconsulta_fechadenacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_fechadenacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_fechadenacimientoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,9 +300,18 @@ public class VistaConsultaHuespedes extends javax.swing.JFrame {
     private javax.swing.JButton botoneliminarhuesped_consultahuesped;
     private javax.swing.JButton botonmodificarhuesped_consultahuesped;
     private javax.swing.JButton botonvolver_consultahusped;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultahuesped;
+    private javax.swing.JTextField txtconsulta_direccionhuesped;
+    private javax.swing.JTextField txtconsulta_fechadenacimiento;
+    private javax.swing.JTextField txtconsulta_idhuesped;
+    private javax.swing.JTextField txtconsulta_nombrehuesped;
+    private javax.swing.JTextField txtconsulta_telefonohuesped;
     // End of variables declaration//GEN-END:variables
 }

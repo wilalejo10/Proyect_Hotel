@@ -5,7 +5,9 @@
 package Vista;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -36,8 +38,52 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
         return botonvolver_consultareseva;
     }
 
+    public JComboBox<String> getComboxconsulta_tipodehabitacion() {
+        return comboxconsulta_tipodehabitacion;
+    }
+
     public JTable getTablaconsultareserva() {
         return tablaconsultareserva;
+    }
+
+    public JTextField getTxtconsulta_cantidaddehabitaciones() {
+        return txtconsulta_cantidaddehabitaciones;
+    }
+
+    public JTextField getTxtconsulta_cantidadpersonasreserva() {
+        return txtconsulta_cantidadpersonasreserva;
+    }
+
+    public JTextField getTxtconsulta_direccionreserva() {
+        return txtconsulta_direccionreserva;
+    }
+
+    public JTextField getTxtconsulta_fechafin() {
+        return txtconsulta_fechafin;
+    }
+
+    public JTextField getTxtconsulta_fechainicio() {
+        return txtconsulta_fechainicio;
+    }
+
+    public JTextField getTxtconsulta_idagencia() {
+        return txtconsulta_idagencia;
+    }
+
+    public JTextField getTxtconsulta_idhuesped() {
+        return txtconsulta_idhuesped;
+    }
+
+    public JTextField getTxtconsulta_idreserva() {
+        return txtconsulta_idreserva;
+    }
+
+    public JTextField getTxtconsulta_serviciosadicionales() {
+        return txtconsulta_serviciosadicionales;
+    }
+
+    public JTextField getTxtconsulta_telefonoreserva() {
+        return txtconsulta_telefonoreserva;
     }
     
     /**
@@ -49,17 +95,47 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        tablaconsultareserva = new javax.swing.JTable();
-        botonconsultareserva_consultareseva = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         botonmodificarreserva_consultareseva = new javax.swing.JButton();
+        botonconsultareserva_consultareseva = new javax.swing.JButton();
         botoneliminarreserva_consultareseva = new javax.swing.JButton();
         botonvolver_consultareseva = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tablaconsultareserva = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
+        txtconsulta_idreserva = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtconsulta_idhuesped = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtconsulta_direccionreserva = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtconsulta_telefonoreserva = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        txtconsulta_idagencia = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txtconsulta_fechainicio = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtconsulta_fechafin = new javax.swing.JTextField();
+        txtconsulta_cantidadpersonasreserva = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txtconsulta_cantidaddehabitaciones = new javax.swing.JTextField();
+        comboxconsulta_tipodehabitacion = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
+        txtconsulta_serviciosadicionales = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+
+        botonmodificarreserva_consultareseva.setText("Modificar");
+
+        botonconsultareserva_consultareseva.setText("Consultar");
+
+        botoneliminarreserva_consultareseva.setText("Eliminar");
+
+        botonvolver_consultareseva.setText("Volver");
 
         tablaconsultareserva.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -74,53 +150,235 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tablaconsultareserva);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 17, -1, 275));
+        jLabel2.setText("ID Reserva");
 
-        botonconsultareserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
-        botonconsultareserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
-        botonconsultareserva_consultareseva.setText("Consultar");
-        getContentPane().add(botonconsultareserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 198, -1, -1));
+        txtconsulta_idreserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_idreservaActionPerformed(evt);
+            }
+        });
 
-        botonmodificarreserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
-        botonmodificarreserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
-        botonmodificarreserva_consultareseva.setText("Modificar");
-        getContentPane().add(botonmodificarreserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 252, -1, -1));
+        jLabel3.setText("ID del Huesped");
 
-        botoneliminarreserva_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
-        botoneliminarreserva_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
-        botoneliminarreserva_consultareseva.setText("Eliminar");
-        getContentPane().add(botoneliminarreserva_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 198, -1, -1));
+        jLabel4.setText("Direccion");
 
-        botonvolver_consultareseva.setBackground(new java.awt.Color(0, 0, 0));
-        botonvolver_consultareseva.setForeground(new java.awt.Color(255, 255, 255));
-        botonvolver_consultareseva.setText("Volver");
-        getContentPane().add(botonvolver_consultareseva, new org.netbeans.lib.awtextra.AbsoluteConstraints(138, 252, -1, -1));
+        txtconsulta_direccionreserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_direccionreservaActionPerformed(evt);
+            }
+        });
 
-        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+        jLabel5.setText("Telefono");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/reservas.png"))); // NOI18N
+        txtconsulta_telefonoreserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_telefonoreservaActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("ID Agencia");
+
+        txtconsulta_idagencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_idagenciaActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setText("Fecha de inicio");
+
+        txtconsulta_fechainicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_fechainicioActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("Fecha fin");
+
+        txtconsulta_fechafin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_fechafinActionPerformed(evt);
+            }
+        });
+
+        txtconsulta_cantidadpersonasreserva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_cantidadpersonasreservaActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Cantidad de personas");
+
+        jLabel10.setText("Tipo y cantidad de habitaciones");
+
+        txtconsulta_cantidaddehabitaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsulta_cantidaddehabitacionesActionPerformed(evt);
+            }
+        });
+
+        comboxconsulta_tipodehabitacion.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jLabel1.setText("Servicios adicionales");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(jLabel1)
-                .addContainerGap(557, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtconsulta_cantidadpersonasreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botonmodificarreserva_consultareseva)
+                            .addComponent(botonconsultareserva_consultareseva))
+                        .addGap(86, 86, 86)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botonvolver_consultareseva)
+                            .addComponent(botoneliminarreserva_consultareseva)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtconsulta_idhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtconsulta_idreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(txtconsulta_telefonoreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addComponent(txtconsulta_idagencia, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtconsulta_fechainicio, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(24, 24, 24)
+                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtconsulta_fechafin, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtconsulta_direccionreserva, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(comboxconsulta_tipodehabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(txtconsulta_cantidaddehabitaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(txtconsulta_serviciosadicionales, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel1)
-                .addContainerGap(148, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel2)
+                            .addComponent(txtconsulta_idreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(txtconsulta_idhuesped, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(txtconsulta_direccionreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(txtconsulta_telefonoreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(txtconsulta_idagencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(txtconsulta_fechainicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8)
+                            .addComponent(txtconsulta_fechafin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtconsulta_cantidadpersonasreserva, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(txtconsulta_cantidaddehabitaciones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comboxconsulta_tipodehabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1)
+                            .addComponent(txtconsulta_serviciosadicionales, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(45, 45, 45)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(botoneliminarreserva_consultareseva)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(botonvolver_consultareseva))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(botonconsultareserva_consultareseva)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(botonmodificarreserva_consultareseva)))
+                        .addGap(49, 49, 49))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 330));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 930, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtconsulta_telefonoreservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_telefonoreservaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_telefonoreservaActionPerformed
+
+    private void txtconsulta_idagenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_idagenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_idagenciaActionPerformed
+
+    private void txtconsulta_fechainicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_fechainicioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_fechainicioActionPerformed
+
+    private void txtconsulta_fechafinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_fechafinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_fechafinActionPerformed
+
+    private void txtconsulta_direccionreservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_direccionreservaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_direccionreservaActionPerformed
+
+    private void txtconsulta_idreservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_idreservaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_idreservaActionPerformed
+
+    private void txtconsulta_cantidadpersonasreservaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_cantidadpersonasreservaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_cantidadpersonasreservaActionPerformed
+
+    private void txtconsulta_cantidaddehabitacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsulta_cantidaddehabitacionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsulta_cantidaddehabitacionesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,9 +420,29 @@ public class VistaConsultaReservas extends javax.swing.JFrame {
     private javax.swing.JButton botoneliminarreserva_consultareseva;
     private javax.swing.JButton botonmodificarreserva_consultareseva;
     private javax.swing.JButton botonvolver_consultareseva;
+    private javax.swing.JComboBox<String> comboxconsulta_tipodehabitacion;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultareserva;
+    private javax.swing.JTextField txtconsulta_cantidaddehabitaciones;
+    private javax.swing.JTextField txtconsulta_cantidadpersonasreserva;
+    private javax.swing.JTextField txtconsulta_direccionreserva;
+    private javax.swing.JTextField txtconsulta_fechafin;
+    private javax.swing.JTextField txtconsulta_fechainicio;
+    private javax.swing.JTextField txtconsulta_idagencia;
+    private javax.swing.JTextField txtconsulta_idhuesped;
+    private javax.swing.JTextField txtconsulta_idreserva;
+    private javax.swing.JTextField txtconsulta_serviciosadicionales;
+    private javax.swing.JTextField txtconsulta_telefonoreserva;
     // End of variables declaration//GEN-END:variables
 }

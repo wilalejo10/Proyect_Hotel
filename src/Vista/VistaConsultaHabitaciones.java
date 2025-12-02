@@ -6,6 +6,7 @@ package Vista;
 
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -18,6 +19,22 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
      */
     public VistaConsultaHabitaciones() {
         initComponents();
+    }
+
+    public JTextField getTxtconsultaidhabitacion() {
+        return txtconsultaidhabitacion;
+    }
+
+    public JTextField getTxtconsultaidhotel() {
+        return txtconsultaidhotel;
+    }
+
+    public JTextField getTxtconsultanumerodehabitacion() {
+        return txtconsultanumerodehabitacion;
+    }
+
+    public JTextField getTxtconsultatipohabitacion() {
+        return txtconsultatipohabitacion;
     }
 
     public JButton getBontonvolver_consultahabitacion() {
@@ -56,7 +73,14 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
         botonmodificarhabitacion_consultahabitacion = new javax.swing.JButton();
         bontonvolver_consultahabitacion = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        txtconsultatipohabitacion = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        txtconsultaidhabitacion = new javax.swing.JTextField();
+        txtconsultaidhotel = new javax.swing.JTextField();
+        txtconsultanumerodehabitacion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -76,51 +100,83 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 40, 375, 275));
 
-        botonconsultarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
-        botonconsultarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultarhabitacion_consultahabitacion.setText("Consultar");
         getContentPane().add(botonconsultarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 232, -1, -1));
 
-        botonaliminarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
-        botonaliminarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonaliminarhabitacion_consultahabitacion.setText("Eliminar");
         getContentPane().add(botonaliminarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 232, -1, -1));
 
-        botonmodificarhabitacion_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
-        botonmodificarhabitacion_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificarhabitacion_consultahabitacion.setText("Modificar");
         getContentPane().add(botonmodificarhabitacion_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 284, -1, -1));
 
-        bontonvolver_consultahabitacion.setBackground(new java.awt.Color(0, 0, 0));
-        bontonvolver_consultahabitacion.setForeground(new java.awt.Color(255, 255, 255));
         bontonvolver_consultahabitacion.setText("Volver");
         getContentPane().add(bontonvolver_consultahabitacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 284, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/habitacion.png"))); // NOI18N
+        jLabel1.setText("ID Habitacion");
+
+        jLabel3.setText("Tipo");
+
+        jLabel4.setText("Numero de habitacion");
+
+        jLabel5.setText("ID Hotel");
+
+        txtconsultanumerodehabitacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtconsultanumerodehabitacionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jLabel2)
-                .addContainerGap(480, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtconsultaidhabitacion)
+                    .addComponent(txtconsultatipohabitacion)
+                    .addComponent(txtconsultanumerodehabitacion)
+                    .addComponent(txtconsultaidhotel, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE))
+                .addContainerGap(426, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addGap(54, 54, 54)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtconsultaidhabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtconsultatipohabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtconsultanumerodehabitacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtconsultaidhotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 710, 350));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtconsultanumerodehabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtconsultanumerodehabitacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtconsultanumerodehabitacionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,9 +218,16 @@ public class VistaConsultaHabitaciones extends javax.swing.JFrame {
     private javax.swing.JButton botonaliminarhabitacion_consultahabitacion;
     private javax.swing.JButton botonconsultarhabitacion_consultahabitacion;
     private javax.swing.JButton botonmodificarhabitacion_consultahabitacion;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultahabitacion;
+    private javax.swing.JTextField txtconsultaidhabitacion;
+    private javax.swing.JTextField txtconsultaidhotel;
+    private javax.swing.JTextField txtconsultanumerodehabitacion;
+    private javax.swing.JTextField txtconsultatipohabitacion;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,29 +1,27 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
 /**
- *
- * @author USER
+ * Clase que representa una Agencia de Viajes
  */
 public class Agencia {
     private int idAgencia;
-    private String nombreA;
-    private String telefono;
+    private String nombre;
     private String direccion;
+    private String telefono;
 
+    // Constructor vacío
     public Agencia() {
     }
 
-    public Agencia(int idAgencia, String nombreA, String telefono, String direccion) {
+    // Constructor completo
+    public Agencia(int idAgencia, String nombre, String direccion, String telefono) {
         this.idAgencia = idAgencia;
-        this.nombreA = nombreA;
-        this.telefono = telefono;
+        this.nombre = nombre;
         this.direccion = direccion;
+        this.telefono = telefono;
     }
 
+    // Getters y Setters
     public int getIdAgencia() {
         return idAgencia;
     }
@@ -32,12 +30,20 @@ public class Agencia {
         this.idAgencia = idAgencia;
     }
 
-    public String getNombreA() {
-        return nombreA;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreA(String nombreA) {
-        this.nombreA = nombreA;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public String getTelefono() {
@@ -48,21 +54,13 @@ public class Agencia {
         this.telefono = telefono;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-    
     @Override
-    public String toString(){
-        return "Agencia{" + 
-                "ID Agencia: " + idAgencia +
-                ", nombre: " + nombreA +
-                ", telefono: " + telefono +
-                ", direccion: " + direccion +
-                "}";
+    public String toString() {
+        return "Agencia{" +
+                "idAgencia=" + idAgencia +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                '}';
     }
 }

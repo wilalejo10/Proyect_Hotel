@@ -6,6 +6,7 @@ package Vista;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 /**
@@ -75,6 +76,18 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
 
     public JTextField getTxttelefono_registroreserva() {
         return txttelefono_registroreserva;
+    }
+
+    public JLabel getLblnombrehuesped() {
+        return lblnombrehuesped;
+    }
+
+    public JTextField getTxtidagencia_registroreserva() {
+        return txtidagencia_registroreserva;
+    }
+
+    public JTextField getTxtidhuesped_resgistroreserva() {
+        return txtidhuesped_resgistroreserva;
     }
 
     /**
@@ -169,8 +182,7 @@ public class VistaRegistroReserva extends javax.swing.JFrame {
         getContentPane().add(txtcatidadpersona, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 297, 122, -1));
         getContentPane().add(txtcantidadhabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(359, 337, 122, -1));
 
-        comboboxtipohabitacion_registroreserva.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(comboboxtipohabitacion_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 337, -1, -1));
+        getContentPane().add(comboboxtipohabitacion_registroreserva, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 337, 100, -1));
         getContentPane().add(txtserviciosadicionales, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 377, 122, -1));
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));

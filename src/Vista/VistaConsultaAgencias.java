@@ -9,12 +9,29 @@ import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
  * @author jnosp
  */
 public class VistaConsultaAgencias extends javax.swing.JFrame {
+
+    public JTextField getTxtconsultadireccionagencia() {
+        return txtconsultadireccionagencia;
+    }
+
+    public JTextField getTxtconsultaidagencia() {
+        return txtconsultaidagencia;
+    }
+
+    public JTextField getTxtconsultanombreagencia() {
+        return txtconsultanombreagencia;
+    }
+
+    public JTextField getTxtconsultatelefonoagencia() {
+        return txtconsultatelefonoagencia;
+    }
 
     
     public JButton getBontonvolver_consultaagencias() {
@@ -61,12 +78,19 @@ public class VistaConsultaAgencias extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         tablaconsultaagencias = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
         botonconsultaagencia_consultaagencia = new javax.swing.JButton();
         botoneliminaragencias_consultaagencias = new javax.swing.JButton();
         botonmodificaragencias_consultaagencias = new javax.swing.JButton();
         bontonvolver_consultaagencias = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        txtconsultadireccionagencia = new javax.swing.JTextField();
+        txtconsultaidagencia = new javax.swing.JTextField();
+        txtconsultanombreagencia = new javax.swing.JTextField();
+        txtconsultatelefonoagencia = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -87,31 +111,44 @@ public class VistaConsultaAgencias extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 6, 375, 275));
 
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         botonconsultaagencia_consultaagencia.setBackground(new java.awt.Color(0, 0, 0));
         botonconsultaagencia_consultaagencia.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultaagencia_consultaagencia.setText("Consultar");
-        getContentPane().add(botonconsultaagencia_consultaagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 186, -1, -1));
+        jPanel1.add(botonconsultaagencia_consultaagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
 
         botoneliminaragencias_consultaagencias.setBackground(new java.awt.Color(0, 0, 0));
         botoneliminaragencias_consultaagencias.setForeground(new java.awt.Color(255, 255, 255));
         botoneliminaragencias_consultaagencias.setText("Eliminar");
-        getContentPane().add(botoneliminaragencias_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 186, -1, -1));
+        jPanel1.add(botoneliminaragencias_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, -1, -1));
 
         botonmodificaragencias_consultaagencias.setBackground(new java.awt.Color(0, 0, 0));
         botonmodificaragencias_consultaagencias.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificaragencias_consultaagencias.setText("Modificar");
-        getContentPane().add(botonmodificaragencias_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 237, -1, -1));
+        jPanel1.add(botonmodificaragencias_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
         bontonvolver_consultaagencias.setBackground(new java.awt.Color(0, 0, 0));
         bontonvolver_consultaagencias.setForeground(new java.awt.Color(255, 255, 255));
         bontonvolver_consultaagencias.setText("Volver");
-        getContentPane().add(bontonvolver_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 237, -1, -1));
+        jPanel1.add(bontonvolver_consultaagencias, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel2.setText("ID Agencia");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/agencias.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 170, 150));
+        jLabel3.setText("Nombre");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
+
+        jLabel4.setText("Telefono");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+
+        jLabel5.setText("Direccion");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, -1, -1));
+        jPanel1.add(txtconsultadireccionagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 150, 110, -1));
+        jPanel1.add(txtconsultaidagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 30, 110, -1));
+        jPanel1.add(txtconsultanombreagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 70, 110, -1));
+        jPanel1.add(txtconsultatelefonoagencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 110, 110, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, 0, 720, 310));
 
@@ -171,10 +208,17 @@ public class VistaConsultaAgencias extends javax.swing.JFrame {
     private javax.swing.JButton botonconsultaagencia_consultaagencia;
     private javax.swing.JButton botoneliminaragencias_consultaagencias;
     private javax.swing.JButton botonmodificaragencias_consultaagencias;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultaagencias;
+    private javax.swing.JTextField txtconsultadireccionagencia;
+    private javax.swing.JTextField txtconsultaidagencia;
+    private javax.swing.JTextField txtconsultanombreagencia;
+    private javax.swing.JTextField txtconsultatelefonoagencia;
     // End of variables declaration//GEN-END:variables
 }

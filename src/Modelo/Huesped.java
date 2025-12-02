@@ -1,33 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
 import java.time.LocalDate;
 
 /**
- *
- * @author USER
+ * Clase que representa un Huésped
  */
 public class Huesped {
     private int idHuesped;
-    private String nombreHuesped;
+    private String nombre;
     private String direccion;
     private String telefono;
     private LocalDate fechaNacimiento;
 
+    // Constructor vacío
     public Huesped() {
     }
 
-    public Huesped(int idHuesped, String nombreHuesped, String direccion, String telefono, LocalDate fechaNacimiento) {
+    // Constructor completo
+    public Huesped(int idHuesped, String nombre, String direccion, 
+                   String telefono, LocalDate fechaNacimiento) {
         this.idHuesped = idHuesped;
-        this.nombreHuesped = nombreHuesped;
+        this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    // Getters y Setters
     public int getIdHuesped() {
         return idHuesped;
     }
@@ -36,12 +35,12 @@ public class Huesped {
         this.idHuesped = idHuesped;
     }
 
-    public String getNombreHuesped() {
-        return nombreHuesped;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreHuesped(String nombreHuesped) {
-        this.nombreHuesped = nombreHuesped;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDireccion() {
@@ -67,15 +66,15 @@ public class Huesped {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-    
+
     @Override
-    public String toString(){
-        return "Huesped{" + 
-                "ID Huesped: " + idHuesped +
-                ", nombre: " + nombreHuesped +
-                ", direccion: " + direccion +
-                ", telefono: " + telefono +
-                ", fecha de nacimiento: " + fechaNacimiento +
-                "}";
+    public String toString() {
+        return "Huesped{" +
+                "idHuesped=" + idHuesped +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
     }
 }

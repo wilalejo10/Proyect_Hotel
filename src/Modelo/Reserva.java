@@ -1,44 +1,49 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
+
 import java.time.LocalDate;
-import java.time.LocalDateTime;
+
 /**
- *
- * @author USER
+ * Clase que representa una Reserva
  */
 public class Reserva {
     private int idReserva;
     private int idHuesped;
-    private String direccion;
-    private String telefono;
-    private int idAgencia;
+    private Integer idAgencia; // Puede ser null si no es reserva de agencia
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private int cantidadPersonas;
-    private String tipoHabitacion;
     private int cantidadHabitaciones;
+    private String tipoHabitacion;
+    private String direccion;
+    private String telefono;
     private String serviciosAdicionales;
+    private Integer idRegistroLlegada; // Puede ser null hasta que llegue
 
+    // Constructor vacío
     public Reserva() {
     }
 
-    public Reserva(int idReserva, int idHuesped, String direccion, String telefono, int idAgencia, LocalDate fechaInicio, LocalDate fechaFin, int cantidadPersonas, String tipoHabitacion, int cantidadHabitaciones, String serviciosAdicionales) {
+    // Constructor completo
+    public Reserva(int idReserva, int idHuesped, Integer idAgencia, 
+                   LocalDate fechaInicio, LocalDate fechaFin, 
+                   int cantidadPersonas, int cantidadHabitaciones,
+                   String tipoHabitacion, String direccion, String telefono,
+                   String serviciosAdicionales, Integer idRegistroLlegada) {
         this.idReserva = idReserva;
         this.idHuesped = idHuesped;
-        this.direccion = direccion;
-        this.telefono = telefono;
         this.idAgencia = idAgencia;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.cantidadPersonas = cantidadPersonas;
-        this.tipoHabitacion = tipoHabitacion;
         this.cantidadHabitaciones = cantidadHabitaciones;
+        this.tipoHabitacion = tipoHabitacion;
+        this.direccion = direccion;
+        this.telefono = telefono;
         this.serviciosAdicionales = serviciosAdicionales;
+        this.idRegistroLlegada = idRegistroLlegada;
     }
 
+    // Getters y Setters
     public int getIdReserva() {
         return idReserva;
     }
@@ -51,31 +56,15 @@ public class Reserva {
         return idHuesped;
     }
 
-    public void setIdHuesped(String nombreHuesped) {
+    public void setIdHuesped(int idHuesped) {
         this.idHuesped = idHuesped;
     }
 
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
-    }
-
-    public int getIdAgencia() {
+    public Integer getIdAgencia() {
         return idAgencia;
     }
 
-    public void setIdAgencia(int idAgencia) {
+    public void setIdAgencia(Integer idAgencia) {
         this.idAgencia = idAgencia;
     }
 
@@ -103,6 +92,14 @@ public class Reserva {
         this.cantidadPersonas = cantidadPersonas;
     }
 
+    public int getCantidadHabitaciones() {
+        return cantidadHabitaciones;
+    }
+
+    public void setCantidadHabitaciones(int cantidadHabitaciones) {
+        this.cantidadHabitaciones = cantidadHabitaciones;
+    }
+
     public String getTipoHabitacion() {
         return tipoHabitacion;
     }
@@ -111,12 +108,20 @@ public class Reserva {
         this.tipoHabitacion = tipoHabitacion;
     }
 
-    public int getCantidadHabitaciones() {
-        return cantidadHabitaciones;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setCantidadHabitaciones(int cantidadHabitaciones) {
-        this.cantidadHabitaciones = cantidadHabitaciones;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getServiciosAdicionales() {
@@ -126,21 +131,30 @@ public class Reserva {
     public void setServiciosAdicionales(String serviciosAdicionales) {
         this.serviciosAdicionales = serviciosAdicionales;
     }
-    
+
+    public Integer getIdRegistroLlegada() {
+        return idRegistroLlegada;
+    }
+
+    public void setIdRegistroLlegada(Integer idRegistroLlegada) {
+        this.idRegistroLlegada = idRegistroLlegada;
+    }
+
     @Override
-    public String toString(){
-        return "Reserva{" + 
-                "ID Reserva: " + idReserva +
-                ", ID Huesped: " + idHuesped +
-                ", direccion: " + direccion +
-                ", telefono: " + telefono +
-                ", ID agencia: " + idAgencia +
-                ", fecha inicio: " + fechaInicio +
-                ", fecha fin: " + fechaFin +
-                ", cantidad de personas: " + cantidadPersonas +
-                ", tipo de habitaciones: " + tipoHabitacion +
-                ", cantidad de habitaciones: " + cantidadHabitaciones +
-                ", Servicios adicionales: " + serviciosAdicionales +
-                "}";
+    public String toString() {
+        return "Reserva{" +
+                "idReserva=" + idReserva +
+                ", idHuesped=" + idHuesped +
+                ", idAgencia=" + idAgencia +
+                ", fechaInicio=" + fechaInicio +
+                ", fechaFin=" + fechaFin +
+                ", cantidadPersonas=" + cantidadPersonas +
+                ", cantidadHabitaciones=" + cantidadHabitaciones +
+                ", tipoHabitacion='" + tipoHabitacion + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", serviciosAdicionales='" + serviciosAdicionales + '\'' +
+                ", idRegistroLlegada=" + idRegistroLlegada +
+                '}';
     }
 }

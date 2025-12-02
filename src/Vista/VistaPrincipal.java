@@ -61,9 +61,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(bontonconsultar, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 103, 131, 54));
 
-        bontonregitrar.setBackground(new java.awt.Color(0, 0, 0));
+        bontonregitrar.setBackground(new java.awt.Color(255, 255, 255));
         bontonregitrar.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
-        bontonregitrar.setForeground(new java.awt.Color(255, 255, 255));
+        bontonregitrar.setForeground(new java.awt.Color(0, 0, 0));
         bontonregitrar.setText("Registrar");
         bontonregitrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,9 +72,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(bontonregitrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(277, 103, 131, 54));
 
-        botonsalida.setBackground(new java.awt.Color(0, 0, 0));
+        botonsalida.setBackground(new java.awt.Color(255, 255, 255));
         botonsalida.setFont(new java.awt.Font("Berlin Sans FB", 0, 24)); // NOI18N
-        botonsalida.setForeground(new java.awt.Color(255, 255, 255));
+        botonsalida.setForeground(new java.awt.Color(0, 0, 0));
         botonsalida.setText("Salir");
         getContentPane().add(botonsalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 254, 124, 42));
 

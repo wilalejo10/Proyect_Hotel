@@ -2,6 +2,7 @@ package Vista;
 
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 
 /*
@@ -41,6 +42,22 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
     public JTable getTablaconsultarhoteles() {
         return tablaconsultarhoteles;
     }
+
+    public JTextField getTxtconsulta_añodeinauguracion() {
+        return txtconsulta_añodeinauguracion;
+    }
+
+    public JTextField getTxtconsulta_direccionhotel() {
+        return txtconsulta_direccionhotel;
+    }
+
+    public JTextField getTxtconsulta_nombrehotel() {
+        return txtconsulta_nombrehotel;
+    }
+
+    public JTextField getTxtconsulta_telefonohotel() {
+        return txtconsulta_telefonohotel;
+    }
     
 
     /**
@@ -59,7 +76,16 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
         botonmodificarhotel_consultahotel = new javax.swing.JButton();
         bontonvolver_consultahotel = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtconsulta_nombrehotel = new javax.swing.JTextField();
+        txtconsulta_direccionhotel = new javax.swing.JTextField();
+        txtconsulta_telefonohotel = new javax.swing.JTextField();
+        txtconsulta_añodeinauguracion = new javax.swing.JTextField();
+        comoboxconsulta_categoria = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -79,45 +105,77 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 51, 461, 315));
 
-        botonconsultarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
-        botonconsultarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botonconsultarhotel_consultahotel.setText("Consultar");
         getContentPane().add(botonconsultarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 265, -1, -1));
 
-        botoneliminarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
-        botoneliminarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botoneliminarhotel_consultahotel.setText("Eliminar");
         getContentPane().add(botoneliminarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 265, -1, -1));
 
-        botonmodificarhotel_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
-        botonmodificarhotel_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         botonmodificarhotel_consultahotel.setText("Modificar");
         getContentPane().add(botonmodificarhotel_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 316, -1, -1));
 
-        bontonvolver_consultahotel.setBackground(new java.awt.Color(0, 0, 0));
-        bontonvolver_consultahotel.setForeground(new java.awt.Color(255, 255, 255));
         bontonvolver_consultahotel.setText("Volver");
         getContentPane().add(bontonvolver_consultahotel, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 316, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/recursos/hoteles.png"))); // NOI18N
+        jLabel2.setText("Nombre del hotel");
+
+        jLabel3.setText("Direccion");
+
+        jLabel4.setText("Telefono");
+
+        jLabel5.setText("Año de inauguracion");
+
+        jLabel6.setText("Categoria");
+
+        comoboxconsulta_categoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1 Estrella", "2 Estrellas", "3 Estrellas", "4 Estrellas", "5 Estrellas", " " }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(580, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtconsulta_nombrehotel)
+                    .addComponent(txtconsulta_direccionhotel)
+                    .addComponent(txtconsulta_telefonohotel)
+                    .addComponent(txtconsulta_añodeinauguracion)
+                    .addComponent(comoboxconsulta_categoria, 0, 104, Short.MAX_VALUE))
+                .addContainerGap(510, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(154, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtconsulta_nombrehotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(txtconsulta_direccionhotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(txtconsulta_telefonohotel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5)
+                    .addComponent(txtconsulta_añodeinauguracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6)
+                    .addComponent(comoboxconsulta_categoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(156, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 380));
@@ -165,9 +223,18 @@ public class VistaConsultaHoteles extends javax.swing.JFrame {
     private javax.swing.JButton botonconsultarhotel_consultahotel;
     private javax.swing.JButton botoneliminarhotel_consultahotel;
     private javax.swing.JButton botonmodificarhotel_consultahotel;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JComboBox<String> comoboxconsulta_categoria;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaconsultarhoteles;
+    private javax.swing.JTextField txtconsulta_añodeinauguracion;
+    private javax.swing.JTextField txtconsulta_direccionhotel;
+    private javax.swing.JTextField txtconsulta_nombrehotel;
+    private javax.swing.JTextField txtconsulta_telefonohotel;
     // End of variables declaration//GEN-END:variables
 }

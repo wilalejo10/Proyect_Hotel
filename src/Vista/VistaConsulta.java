@@ -79,6 +79,11 @@ public class VistaConsulta extends javax.swing.JFrame {
         getContentPane().add(botonconsultahabitaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 130, -1, -1));
 
         botonregresomenu_consulta.setText("Volver al Menú Principal");
+        botonregresomenu_consulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonregresomenu_consultaActionPerformed(evt);
+            }
+        });
         getContentPane().add(botonregresomenu_consulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 450, -1, -1));
 
         botonconsultahuespedes.setText("Consultar Huéspedes");
@@ -91,6 +96,11 @@ public class VistaConsulta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonregresomenu_consultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonregresomenu_consultaActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_botonregresomenu_consultaActionPerformed
 
     /**
      * @param args the command line arguments

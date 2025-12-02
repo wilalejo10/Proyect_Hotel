@@ -1,51 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
 /**
- *
- * @author USER
+ * Clase que representa una Habitación
  */
 public class Habitacion {
     private int idHabitacion;
-    private String tipoH;
-    private int numHabitacion;
     private int idHotel;
+    private String nombreHotel;
+    private int numeroHabitacion;
+    private String tipoHabitacion;
+    private int idReserva;
 
+    // Constructor vacío
     public Habitacion() {
     }
 
-    public Habitacion(int idHabitacion, String tipoH, int numHabitacion, int idHotel) {
+    // Constructor completo
+    public Habitacion(int idHabitacion, int idHotel, String nombreHotel, 
+                      int numeroHabitacion, String tipoHabitacion, int idReserva) {
         this.idHabitacion = idHabitacion;
-        this.tipoH = tipoH;
-        this.numHabitacion = numHabitacion;
         this.idHotel = idHotel;
+        this.nombreHotel = nombreHotel;
+        this.numeroHabitacion = numeroHabitacion;
+        this.tipoHabitacion = tipoHabitacion;
+        this.idReserva = idReserva;
     }
 
+    // Getters y Setters
     public int getIdHabitacion() {
         return idHabitacion;
     }
 
     public void setIdHabitacion(int idHabitacion) {
         this.idHabitacion = idHabitacion;
-    }
-
-    public String getTipoH() {
-        return tipoH;
-    }
-
-    public void setTipoH(String tipoH) {
-        this.tipoH = tipoH;
-    }
-
-    public int getNumHabitacion() {
-        return numHabitacion;
-    }
-
-    public void setNumHabitacion(int numHabitacion) {
-        this.numHabitacion = numHabitacion;
     }
 
     public int getIdHotel() {
@@ -55,14 +42,48 @@ public class Habitacion {
     public void setIdHotel(int idHotel) {
         this.idHotel = idHotel;
     }
-    
+
+    public String getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(String nombreHotel) {
+        this.nombreHotel = nombreHotel;
+    }
+
+    public int getNumeroHabitacion() {
+        return numeroHabitacion;
+    }
+
+    public void setNumeroHabitacion(int numeroHabitacion) {
+        this.numeroHabitacion = numeroHabitacion;
+    }
+
+    public String getTipoHabitacion() {
+        return tipoHabitacion;
+    }
+
+    public void setTipoHabitacion(String tipoHabitacion) {
+        this.tipoHabitacion = tipoHabitacion;
+    }
+
+    public int getIdReserva() {
+        return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
+    }
+
     @Override
-    public String toString(){
-        return "Habitacion{" + 
-                "ID Habitacion: " + idHabitacion +
-                ", tipo: " + tipoH +
-                ", numero de habitacion: " + numHabitacion +
-                ", ID Hotel: " + idHotel +
-                "}";
+    public String toString() {
+        return "Habitacion{" +
+                "idHabitacion=" + idHabitacion +
+                ", idHotel=" + idHotel +
+                ", nombreHotel='" + nombreHotel + '\'' +
+                ", numeroHabitacion=" + numeroHabitacion +
+                ", tipoHabitacion='" + tipoHabitacion + '\'' +
+                ", idReserva=" + idReserva +
+                '}';
     }
 }

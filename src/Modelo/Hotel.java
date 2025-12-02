@@ -1,49 +1,46 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
-import java.time.LocalDate;
-
 /**
- *
- * @author USER
+ * Clase que representa un Hotel
  */
 public class Hotel {
-    private String nombreHotel;
     private int idHotel;
+    private String nombre;
     private String direccion;
     private String telefono;
     private int anioInauguracion;
     private int categoria;
 
+    // Constructor vacío
     public Hotel() {
     }
 
-    public Hotel(String nombreHotel, int idHotel, String direccion, String telefono, int anioInauguracion, int categoria) {
-        this.nombreHotel = nombreHotel;
+    // Constructor completo
+    public Hotel(int idHotel, String nombre, String direccion, String telefono, 
+                 int anioInauguracion, int categoria) {
         this.idHotel = idHotel;
+        this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.anioInauguracion = anioInauguracion;
         this.categoria = categoria;
     }
 
-    public String getNombreHotel() {
-        return nombreHotel;
-    }
-
-    public void setNombreHotel(String nombreHotel) {
-        this.nombreHotel = nombreHotel;
-    }
-    
-    public int getIdHotel(){
+    // Getters y Setters
+    public int getIdHotel() {
         return idHotel;
     }
-    
-    public void setIdHotel(int idHotel){
+
+    public void setIdHotel(int idHotel) {
         this.idHotel = idHotel;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getDireccion() {
@@ -77,20 +74,22 @@ public class Hotel {
     public void setCategoria(int categoria) {
         this.categoria = categoria;
     }
-    
-    public int getAntiguedad(){
-        return LocalDate.now().getYear()- anioInauguracion;
+
+    // Método para calcular antigüedad
+    public int calcularAntiguedad() {
+        return java.time.Year.now().getValue() - this.anioInauguracion;
     }
-    
+
     @Override
-    public String toString(){
-        return "Hotel{" + 
-                "Nombre: " + nombreHotel +
-                ", ID Hotel: " + idHotel +
-                ", direccion: " + direccion +
-                ", telefono: " + telefono +
-                ", año de inauguracion: " + anioInauguracion +
-                ", categoria: " + categoria +
-                "}";
+    public String toString() {
+        return "Hotel{" +
+                "idHotel=" + idHotel +
+                ", nombre='" + nombre + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", anioInauguracion=" + anioInauguracion +
+                ", categoria=" + categoria +
+                ", antiguedad=" + calcularAntiguedad() +
+                '}';
     }
 }

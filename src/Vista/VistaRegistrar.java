@@ -63,32 +63,32 @@ public class VistaRegistrar extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        botonregistrarreservacion.setBackground(new java.awt.Color(0, 0, 0));
-        botonregistrarreservacion.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistrarreservacion.setBackground(new java.awt.Color(255, 255, 255));
+        botonregistrarreservacion.setForeground(new java.awt.Color(0, 0, 0));
         botonregistrarreservacion.setText("Registrar Resevación");
         getContentPane().add(botonregistrarreservacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 133, -1, -1));
 
-        botonregresomenu_resgistro.setBackground(new java.awt.Color(0, 0, 0));
-        botonregresomenu_resgistro.setForeground(new java.awt.Color(255, 255, 255));
+        botonregresomenu_resgistro.setBackground(new java.awt.Color(255, 255, 255));
+        botonregresomenu_resgistro.setForeground(new java.awt.Color(0, 0, 0));
         botonregresomenu_resgistro.setText("Volver al Menú Principal");
         getContentPane().add(botonregresomenu_resgistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 271, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
-        botonregistrarhotel.setBackground(new java.awt.Color(0, 0, 0));
-        botonregistrarhotel.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistrarhotel.setBackground(new java.awt.Color(255, 255, 255));
+        botonregistrarhotel.setForeground(new java.awt.Color(0, 0, 0));
         botonregistrarhotel.setText("Registrar Hotel");
 
-        botonregistrarhabitacion.setBackground(new java.awt.Color(0, 0, 0));
-        botonregistrarhabitacion.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistrarhabitacion.setBackground(new java.awt.Color(255, 255, 255));
+        botonregistrarhabitacion.setForeground(new java.awt.Color(0, 0, 0));
         botonregistrarhabitacion.setText("Registrar Habitación");
 
-        botonregistrarhuesped.setBackground(new java.awt.Color(0, 0, 0));
-        botonregistrarhuesped.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistrarhuesped.setBackground(new java.awt.Color(255, 255, 255));
+        botonregistrarhuesped.setForeground(new java.awt.Color(0, 0, 0));
         botonregistrarhuesped.setText("Registrar Huésped");
 
-        botonregistraragencia.setBackground(new java.awt.Color(0, 0, 0));
-        botonregistraragencia.setForeground(new java.awt.Color(255, 255, 255));
+        botonregistraragencia.setBackground(new java.awt.Color(255, 255, 255));
+        botonregistraragencia.setForeground(new java.awt.Color(0, 0, 0));
         botonregistraragencia.setText("Registrar Agencia de Viajes");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
